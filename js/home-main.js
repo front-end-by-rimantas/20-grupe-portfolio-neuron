@@ -5,7 +5,7 @@
 /* creativity */
 /* intelligence */
 /* achievements */
-/* servicies */
+/* services */
 /* projects */
 /* updates */
 /* clients */
@@ -21,7 +21,7 @@
 /* creativity */
 /* intelligence */
 /* achievements */
-/* servicies */
+/* services */
 /* projects */
 /* updates */
 /* clients */
