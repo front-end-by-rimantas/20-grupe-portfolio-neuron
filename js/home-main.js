@@ -8,6 +8,7 @@
 /* servicies */
 /* projects */
 /* updates */
+/* clients */
 /* works */
 /* blog */
 /* contact*/
@@ -23,6 +24,7 @@
 /* servicies */
 /* projects */
 /* updates */
+/* clients */
 /* works */
 /* blog */
 /* contact*/

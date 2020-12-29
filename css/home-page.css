@@ -14,6 +14,7 @@
 @import './components/header.css';
 @import './components/hero.css';
 @import './components/intelligence.css';
+@import './components/clients.css';
 @import './components/projects.css';
 @import './components/servicies.css';
 @import './components/updates.css';
@@ -29,6 +30,7 @@
 /* servicies */
 /* projects */
 /* updates */
+/* clients */
 /* works */
 /* blog */
 /* contact*/
