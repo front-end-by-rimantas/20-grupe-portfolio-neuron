@@ -4,10 +4,32 @@
 /* 3rd party */
 @import './components/bootstrap-grid.min.css';
 /* components */
+@import './components/achievements.css';
+@import './components/blog.css';
+@import './components/button.css';
+@import './components/contact.css';
+@import './components/creativity.css';
+@import './components/footer.css';
+@import './components/form.css';
 @import './components/header.css';
+@import './components/hero.css';
+@import './components/intelligence.css';
+@import './components/projects.css';
+@import './components/servicies.css';
+@import './components/updates.css';
+@import './components/works.css';
 
 /* custom: home page sections */
 
 /* header */
 /* hero */
-/* services */
+/* creativity */
+/* intelligence */
+/* achievements */
+/* servicies */
+/* projects */
+/* updates */
+/* works */
+/* blog */
+/* contact*/
+/* footer */
