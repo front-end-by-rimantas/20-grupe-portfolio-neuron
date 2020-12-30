@@ -18,6 +18,12 @@
 	color: #fff;
 }
 
+.btn-hero-1:focus {
+	background-color: transparent;
+	color: #fff;
+	outline: none;
+}
+
 .btn-hero-2 {
 	display: inline-block;
 	text-decoration: none;
@@ -36,6 +42,12 @@
 	transition: 0.5s ease;
 	background-color: #fff;
 	color: #01a0f9;
+}
+
+.btn-hero-2:focus {
+	background-color: #fff;
+	color: #01a0f9;
+	outline: none;
 }
 
 .btn-form {
@@ -91,6 +103,11 @@
 	opacity: 1;
 }
 
+.btn:focus {
+	background-image: linear-gradient(45deg, #09c778, #01a0f9);
+	outline: none;
+}
+
 .btn-round {
 	position: relative;
 	display: inline-block;
@@ -122,4 +139,9 @@
 
 .btn-round:hover::before {
 	opacity: 1;
+}
+
+.btn-round:focus {
+	background-image: linear-gradient(45deg, #09c778, #01a0f9);
+	outline: none;
 }
