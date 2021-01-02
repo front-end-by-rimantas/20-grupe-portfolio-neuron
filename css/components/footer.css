@@ -1,0 +1,88 @@
+.footer {
+  display: block;
+  position: absolute;
+  padding-top: 30px;
+  width: 100%;   
+  /* left: 0; */
+  bottom: 0; 
+  background-image: url(/images/footer/bg-footer.jpg);
+  height: 200px; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+ 
+}​
+
+.footer-text {
+  line-height: 15px;
+  text-decoration: none;
+  text-align: left;
+}
+
+.footer-links a {
+  display: inline-block;
+  width: 100%;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-align: -webkit-match-parent;
+  color: black;
+}
+.footer-links p {
+  padding-bottom: 15px;
+}
+
+.footer-text h3 {
+  display: block;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 30px;
+}
+.footer-logo {
+  height: 20%;
+  padding-bottom: 30px;
+}
+.social a {
+    background-color:#04ABD7;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 45px;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    margin: 4px 2px;
+    position: relative;
+    border-radius: 100%;
+    
+}
+.social p {
+  padding-bottom: 30px;
+}
+.copy p  {
+  display: block;
+  width:100%;
+  font-weight: 400;
+  text-align:center;
+  font-size: 14px;
+  line-height: 25px;
+  color: black;
+  bottom: 0;
+  text-transform: capitalize;
+}
+.about {
+  display: block;
+  font-weight: 400;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  color: black;
+  padding-bottom: 30px;
+}
