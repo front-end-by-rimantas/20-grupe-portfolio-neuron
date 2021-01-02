@@ -1,0 +1,44 @@
+section.intelligence > .row > .col-xs-12 {
+  display: flex;
+  align-items: center;
+}
+
+.intelligence-left-side {
+  padding: 0;
+}
+
+.intelligence-left-side p {
+  margin-top: 20px;
+}
+
+.intelligence-left-side h2 {
+  text-transform: capitalize;
+}
+
+.intelligence-left-side .button-placeholder {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.button-placeholder > a + a {
+  margin-left: 20px;
+}
+
+.intelligence-right-side {
+  padding: 0;
+}
+
+.intelligence-right-side img {
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  section.intelligence > .row > .col-xs-12 {
+    flex-direction: column-reverse;
+  }
+
+  .intelligence-left-side {
+    margin-top: 40px;
+  }
+}
