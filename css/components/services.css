@@ -1,0 +1,76 @@
+.services {
+    display: inline-block;
+    width: 100%;
+    background-color:#eff1f7;
+}
+.services h2 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.services > .service-boxes {
+display: grid;
+width: 100%;
+height: 100%;
+grid-template-columns: repeat(auto-fill, 330px);
+grid-template-rows: auto; 
+column-gap: 20px;
+row-gap: 30px;
+align-items: center;
+justify-content: center
+}
+.service-boxes:last-child {
+    padding-bottom: 50px;
+  }
+.box {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.box:hover {
+    background-image: url(/images/hero/bg.jpg);
+    color: white;
+    background-size: cover;
+    transition-delay: 1s
+    border-radius: 15px;
+    opacity: 1;
+    font-weight: 600;
+  }
+  
+.box img {
+width: 70px;
+height: 70px;
+}
+
+.service-boxes p {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 10px;
+}
+.service-boxes h5 {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+
+  
+    
