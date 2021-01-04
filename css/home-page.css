@@ -3,11 +3,37 @@
 @import './components/reset.css';
 /* 3rd party */
 @import './components/bootstrap-grid.min.css';
+@import './components/flaticon.css';
+@import './components/font-awesome.min.css';
 /* components */
+@import './components/achievements.css';
+@import './components/blog.css';
+@import './components/button.css';
+@import './components/contact.css';
+@import './components/creativity.css';
+@import './components/footer.css';
+@import './components/form.css';
 @import './components/header.css';
+@import './components/hero.css';
+@import './components/intelligence.css';
+@import './components/clients.css';
+@import './components/projects.css';
+@import './components/services.css';
+@import './components/updates.css';
+@import './components/works.css';
 
 /* custom: home page sections */
 
 /* header */
 /* hero */
+/* creativity */
+/* intelligence */
+/* achievements */
 /* services */
+/* projects */
+/* updates */
+/* clients */
+/* works */
+/* blog */
+/* contact*/
+/* footer */

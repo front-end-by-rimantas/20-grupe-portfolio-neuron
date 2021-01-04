@@ -1,2 +1,75 @@
-header {
+/* Top info section */
+header > .row > .topInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 15px 0;
+    border-bottom: 1px solid #0494e3;
+    background-color: var(--main-color);
+}
+    .left-topInfo {
+        display: none;
+    }
+        .left-topInfo a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .left-topInfo > .contacts {
+            display: inline-block;
+            margin-right: 10px;
+        }
+            .left-topInfo > .contacts i {
+                vertical-align: baseline;
+                margin-right: 5px;
+                color: #ffffff;
+            }
+    .right-topInfo {
+        display: none;
+    }
+        .right-topInfo > .topInfo-socials {
+            float: right;
+        }
+            .right-topInfo > .topInfo-socials a {
+                color: #ffffff;
+                margin-left: 10px;
+                vertical-align: baseline;
+            }
+
+/* Navigation */
+header > .row > .header-nav {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 25px 0;
+    background-color: blueviolet;
+}
+    .left-header > .header-logo {
+        display: inline-block;
+    }
+    .right-header > .nav-menu {
+        float: right;
+    }
+        .right-header > .nav-menu a {
+            text-decoration: none;
+            color: #ffffff;
+            padding-left: 25px;
+            font-size: 15px;
+            text-transform: uppercase;
+            vertical-align: baseline;
+        }
+        .right-header > .nav-menu a:first-child {
+            color: #cccccc;
+        }
+        .right-header > .nav-menu a:hover {
+            color: #cccccc;
+        }
+        .right-header > .nav-menu a:nth-last-of-type(-n + 2):hover {
+            color: #555555;
+        }
+
+@media (min-width: 640px) {
+    .left-topInfo {
+        display: block;
+    }
+    .right-topInfo {
+        display: block;
+    }
 }
