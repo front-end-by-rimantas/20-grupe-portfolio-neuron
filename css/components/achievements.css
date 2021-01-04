@@ -37,14 +37,14 @@
         }
 
 @media (min-width: 992px) {
-    .col-md-6 {
+    .achievements > .row > .col-md-6 {
         display: flex;
         justify-content: center;
     }
 }
 
 @media (min-width: 768px) {
-    .col-sm-12 {
+    .achievements > .row > .col-sm-12 {
         display: flex;
         justify-content: center;
     }
