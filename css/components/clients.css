@@ -7,6 +7,7 @@ section.clients {
   z-index: -1;
   position: relative;
   top: -175px;
+  margin-bottom: -175px;
 }
 
 .client-logos-placeholder {
