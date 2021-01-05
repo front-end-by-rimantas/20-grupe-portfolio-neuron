@@ -1,13 +1,14 @@
 /* Top info section */
-header > .row > .topInfo {
+header .row > .topInfo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 15px 0;
     border-bottom: 1px solid #0494e3;
-    background-color: var(--main-color);
+    background: linear-gradient(0deg, #01a0f9, #09c778);
 }
     .left-topInfo {
         display: none;
+        
     }
         .left-topInfo a {
             text-decoration: none;
@@ -15,7 +16,8 @@ header > .row > .topInfo {
         }
         .left-topInfo > .contacts {
             display: inline-block;
-            margin-right: 10px;
+            margin-left: 40px;
+          
         }
             .left-topInfo > .contacts i {
                 vertical-align: baseline;
@@ -26,11 +28,13 @@ header > .row > .topInfo {
         display: none;
     }
         .right-topInfo > .topInfo-socials {
+            display: flex;
+            margin-right: 50px;
             float: right;
         }
             .right-topInfo > .topInfo-socials a {
                 color: #ffffff;
-                margin-left: 10px;
+                margin-right: 10px;
                 vertical-align: baseline;
             }
 
@@ -39,10 +43,12 @@ header > .row > .header-nav {
     display: grid;
     grid-template-columns: 1fr 2fr;
     padding: 25px 0;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
+    background: linear-gradient(0deg, #01a0f9, #09c778);
 }
     .left-header > .header-logo {
-        display: inline-block;
+        display: block;
+        margin-left: 50px;
     }
     .right-header > .nav-menu {
         float: right;

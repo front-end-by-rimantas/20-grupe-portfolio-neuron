@@ -3,12 +3,14 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 0;
+  background-size: cover;
+  background: linear-gradient(0deg, #01a0f9, #09c778);
 }
 
 .left-hero {
   display: inline-block;
   margin: auto;
-  color: chocolate;
+  color: white;
 }
 .hero h1 {
   font-size: 48px;
