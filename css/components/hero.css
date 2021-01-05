@@ -1,16 +1,20 @@
-.hero .col-xs-12 {
+ .hero-bacground {
+  background-size: cover;
+  background-color: linear-gradient(0deg, #01a0f9, #09c778);
+}
+.main-hero {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding: 15px 0;
-  background-size: cover;
-  background: linear-gradient(0deg, #01a0f9, #09c778);
+  width: 100%;
 }
 
 .left-hero {
   display: inline-block;
+  width: 50%;
   margin: auto;
-  color: white;
+  color: black;
 }
 .hero h1 {
   font-size: 48px;
@@ -26,8 +30,8 @@
 
 /* button stilius bus paiimtas is button css. */
 
-.right-hero {
-  width: 100%;
+.main-hero > .right-hero {
+  width: 50%;
   float: left;
   height: 100%;
   position: relative;
@@ -37,10 +41,35 @@
   width: 50%;
   height: auto;
   bottom: 0;
+  animation-name: robot;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
 .img2 {
   height: auto;
   position: absolute;
   bottom: 0;
   width: 50%;
+}
+
+
+@keyframes robot {
+  0%{
+      transform: translatey(0px);
+  }
+  50% {
+      transform: translatey(-30px);
+  }
+  100% {
+      transform: translatey(0px);
+  }
+}
+
+@media (max-width: 640px) {
+  .left-hero {
+    display: block;
+  }
+  .right-hero {
+    display: none;
+  }
 }
