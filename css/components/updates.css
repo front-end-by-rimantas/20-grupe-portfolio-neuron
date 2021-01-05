@@ -76,6 +76,10 @@ section.updates h2 {
   }
 }
 @media (max-width: 768px) {
+  section.updates {
+    margin: 0 5%;
+  }
+
   section.updates > .row > .col-xs-12 {
     flex-direction: column;
     align-items: center;
