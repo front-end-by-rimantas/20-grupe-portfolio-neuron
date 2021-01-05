@@ -20,11 +20,18 @@ section.creativity > .row > .col-xs-12 {
     text-align: center;
     box-shadow: 0 0 15px #00000030;
     margin-bottom: 40px;
+    
 }
 .block:hover {
-    transition: 0.5s;
-    background-color: lightgray;
+  background-image: url(/images/hero/bg.jpg);
+  background-size: cover;
+  background-color: transparent;
+  transition: 0.5s ease;
+  color: #fff;
+  position: relative;
+  opacity: 1;
 }
+
 .block-left-side {
     margin-top: 50px;
     width: 48%;
@@ -41,9 +48,10 @@ section.creativity > .row > .col-xs-12 {
     margin-top: 15px;
     text-align: center;
 }
-.block-flaticon {
-    margin-bottom: 20px;
+#creat-icons {
+  background: url(/images/hero/bg.jpg);
 }
+
 .creativity-right-side > h2 {
     font-size: 35px;
     margin-bottom: 20px;
