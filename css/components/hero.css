@@ -1,28 +1,39 @@
- .hero-bacground {
-  background-size: cover;
-  background-color: linear-gradient(0deg, #01a0f9, #09c778);
-}
-.main-hero {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 15px 0;
+section .main-hero {
+  display: grid;
   width: 100%;
+  height: 100%;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+}
+
+.hero-bacground {
+    background-image: url(/images/hero/bg.jpg);
+    z-index: -2;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .left-hero {
-  display: inline-block;
-  width: 50%;
-  margin: auto;
-  color: black;
+  color: white;
+  align-items: center;
+  display: block;
+  width: 95%;
+  border: none;
+  padding-top: 30%;
+  background-color: transparent;
 }
-.hero h1 {
-  font-size: 48px;
-  line-height: 54px;
+.main-hero h1 {
+  font-size: 45px;
+  line-height: 50px;
   margin-bottom: 14px;
+  font-weight: 800;
 }
-.hero p {
-  font-size: 26px;
+.main-hero p {
+  font-size: 17px;
   line-height: 30px;
   margin-bottom: 28px;
   /* reikia dar srifta priskirti, o srifto spalva bus pakeista uzdejus background. */
@@ -30,46 +41,65 @@
 
 /* button stilius bus paiimtas is button css. */
 
-.main-hero > .right-hero {
-  width: 50%;
-  float: left;
-  height: 100%;
-  position: relative;
-  margin-left: 20px;
+.right-hero {
+  align-items: center;
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  margin-bottom: 20%;
 }
+
+.left-hero > .btn {
+margin-bottom: 30%;
+}
+  
 .img1 {
   width: 50%;
-  height: auto;
-  bottom: 0;
+  margin-top: 10%;
   animation-name: robot;
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
 .img2 {
-  height: auto;
-  position: absolute;
-  bottom: 0;
-  width: 50%;
+  object-fit: cover;
+  width: 45%;
+  margin-top: 40%;
 }
 
-
-@keyframes robot {
-  0%{
-      transform: translatey(0px);
-  }
-  50% {
-      transform: translatey(-30px);
-  }
-  100% {
-      transform: translatey(0px);
-  }
-}
-
-@media (max-width: 640px) {
-  .left-hero {
-    display: block;
-  }
-  .right-hero {
+@media screen and (max-width: 975px) {
+  .right-hero img {
     display: none;
   }
 }
+@media screen and (max-width: 975px) {
+  section .main-hero {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    padding: none;
+    margin: none;
+    background-size: 10%;
+    }
+  }
+    @media screen and (max-width: 975px) {
+      .main-hero h1 {
+        font-size: 30px;
+          line-height: 32px;
+        }
+      }
+
+
+      @keyframes robot {
+        0%{
+            transform: translatey(0px);
+        }
+        50% {
+            transform: translatey(-30px);
+        }
+        100% {
+            transform: translatey(0px);
+        }
+      }
