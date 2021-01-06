@@ -3,8 +3,9 @@
     text-align: center;
     position: relative;
     padding-top: 40px;
+    margin-bottom: 40px;
 }
-h2 {
+.work h2 {
     text-align: center;
     text-transform: capitalize;
 }
@@ -38,6 +39,7 @@ h2 {
     width: 26px;
     background-image: url(/images/work/right-arrow.png);
     background-repeat: no-repeat;
+    background-size: contain;
     background-color: #09c778;
     background-size: 100% 100%;
     bottom: 8px;
