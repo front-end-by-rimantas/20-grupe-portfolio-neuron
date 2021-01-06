@@ -1,8 +1,6 @@
-section .main-hero {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
+section .row-hero {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -23,18 +21,18 @@ section .main-hero {
   display: block;
   width: 95%;
   border: none;
-  padding-top: 30%;
+  padding-top: 22%;
   background-color: transparent;
 }
-.main-hero h1 {
+.row-hero h1 {
   font-size: 45px;
-  line-height: 50px;
+  line-height: 55px;
   margin-bottom: 14px;
   font-weight: 800;
 }
-.main-hero p {
-  font-size: 17px;
-  line-height: 30px;
+.row-hero p {
+  font-size: 20px;
+  line-height: 35px;
   margin-bottom: 28px;
   /* reikia dar srifta priskirti, o srifto spalva bus pakeista uzdejus background. */
 }
@@ -56,9 +54,9 @@ margin-bottom: 30%;
   
 .img1 {
   width: 50%;
-  margin-top: 10%;
+  margin-top: 20%;
   animation-name: robot;
-  animation-duration: 3s;
+  animation-duration: 5s;
   animation-iteration-count: infinite;
 }
 .img2 {
@@ -73,7 +71,7 @@ margin-bottom: 30%;
   }
 }
 @media screen and (max-width: 975px) {
-  section .main-hero {
+  section .row-hero {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
@@ -85,7 +83,7 @@ margin-bottom: 30%;
     }
   }
     @media screen and (max-width: 975px) {
-      .main-hero h1 {
+      .row-hero h1 {
         font-size: 30px;
           line-height: 32px;
         }
