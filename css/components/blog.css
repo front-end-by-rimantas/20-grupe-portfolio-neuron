@@ -1,91 +1,85 @@
 .services h2 {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: capitalize;
-    padding-bottom: 40px;
-    padding-top: 40px;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 .blog-block {
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-    grid-template-rows: auto; 
-    column-gap: 30px;
-    row-gap: 30px;
-    align-items: center;
-    justify-content: center
-} 
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
 
 .blog-box > .first-line {
-display: inline-block;
-text-transform: capitalize;
-font-size: 14px;
-font-weight: 100;
-color: black;
-text-align: left;
-margin-bottom: 15px;
-
+  display: inline-block;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 100;
+  color: black;
+  text-align: left;
+  margin-bottom: 15px;
 }
 
 .blog-box > .first-line div {
-    display: inline;
-    margin-top: 20px;
-    width: 100%;
-    margin-left: 20px;
-   
+  display: inline;
+  margin-top: 20px;
+  width: 100%;
+  margin-left: 20px;
 }
 
 .blog-block:last-child {
-    padding-bottom: 50px;
-  }
+  padding-bottom: 50px;
+}
 
 .blog-box img {
-    position: relative;
-    width: 100%;
-    padding-bottom: 30px ;
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
 }
-
 
 .blog-box > .second-line h5 {
-font-size: 20px;
-font-weight: 700;
-text-align: left;
-width: 85%;
-text-transform: capitalize;
-line-height: 23px;
-margin-left: 20px;
-margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: left;
+  width: 85%;
+  text-transform: capitalize;
+  line-height: 23px;
+  margin-left: 20px;
+  margin-bottom: 15px;
 }
 .blog-box > .second-line p {
-    font-size: 14px;
-    font-weight: 400;
-    text-align: left;
-    width: 85%;
-    line-height: 20px;
-    margin-left: 20px;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  width: 85%;
+  line-height: 20px;
+  margin-left: 20px;
 }
 
 .blog-box > .btn {
-    display: inline-block;
-    position: relative;
-    margin-top: 30px;
-    text-transform: uppercase;
-    text-align: left;
-    padding-bottom: 20px;
-    margin-left: 20px;
-    margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  margin-top: 30px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
 
 .blog-box {
-    display: block;
-    width: 100%;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 5px;
-    background-color: #FFFFFF;
-    text-align: left;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: left;
 }
