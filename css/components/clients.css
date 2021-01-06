@@ -1,0 +1,16 @@
+section.clients {
+  display: flex;
+  background-image: url(../../images/clients/bg-clients.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 260px 0 80px;
+}
+
+.client-logos-placeholder {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

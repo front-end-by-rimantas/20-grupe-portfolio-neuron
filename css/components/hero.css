@@ -48,30 +48,18 @@ section .main-hero {
   border: none;
   background-color: transparent;
   margin-bottom: 20%;
-}
 
-.left-hero > .btn {
-margin-bottom: 30%;
-}
-  
 .img1 {
   width: 50%;
   margin-top: 10%;
-  animation-name: robot;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+
 }
 .img2 {
   object-fit: cover;
   width: 45%;
   margin-top: 40%;
-}
 
-@media screen and (max-width: 975px) {
-  .right-hero img {
-    display: none;
-  }
-}
+
 @media screen and (max-width: 975px) {
   section .main-hero {
     display: grid;
@@ -83,23 +71,9 @@ margin-bottom: 30%;
     margin: none;
     background-size: 10%;
     }
-  }
+
     @media screen and (max-width: 975px) {
       .main-hero h1 {
         font-size: 30px;
           line-height: 32px;
-        }
-      }
 
-
-      @keyframes robot {
-        0%{
-            transform: translatey(0px);
-        }
-        50% {
-            transform: translatey(-30px);
-        }
-        100% {
-            transform: translatey(0px);
-        }
-      }
