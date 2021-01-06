@@ -8,12 +8,8 @@ section.updates > .row > .col-xs-12 {
   border-radius: 10px;
   box-shadow: 0 0 20px 0 #0000002d;
   padding: 50px 0;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-bottom: -175px;
-}
-
-section.updates h2 {
-  text-transform: capitalize;
 }
 
 .flaticon-mail-1::before {

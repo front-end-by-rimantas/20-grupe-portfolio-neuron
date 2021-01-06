@@ -24,6 +24,17 @@
 
 /* custom: home page sections */
 
+h2 {
+  text-transform: capitalize;
+  font-size: 35px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #666;
+}
+
 /* header */
 /* hero */
 /* creativity */
