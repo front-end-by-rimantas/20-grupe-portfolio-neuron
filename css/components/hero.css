@@ -36,10 +36,8 @@ section .main-hero {
   font-size: 17px;
   line-height: 30px;
   margin-bottom: 28px;
-  /* reikia dar srifta priskirti, o srifto spalva bus pakeista uzdejus background. */
+  color: #fff;
 }
-
-/* button stilius bus paiimtas is button css. */
 
 .right-hero {
   align-items: center;
@@ -48,10 +46,6 @@ section .main-hero {
   border: none;
   background-color: transparent;
   margin-bottom: 20%;
-}
-
-.left-hero > .btn {
-margin-bottom: 30%;
 }
   
 .img1 {
