@@ -46,7 +46,7 @@ section.creativity > .row > .col-xs-12 {
     margin-top: 15px;
     text-align: center;
 }
-#cIcons {
+.cIcons {
   display: inline;
   font-size: 90px; 
   padding: 25px 100px 140px 80px;
@@ -56,7 +56,7 @@ section.creativity > .row > .col-xs-12 {
   background-image: linear-gradient(90deg, #12b4c8, #00aeef, #09c778, #01a0f9);
   opacity: 1;
 }
-#cIcons:hover {
+.cIcons:hover {
   transition: 0.5s ease;
   color: #fff;
   position: inherit;
