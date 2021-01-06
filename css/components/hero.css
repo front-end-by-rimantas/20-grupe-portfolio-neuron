@@ -34,10 +34,11 @@ section .row-hero {
   font-size: 20px;
   line-height: 35px;
   margin-bottom: 28px;
-  /* reikia dar srifta priskirti, o srifto spalva bus pakeista uzdejus background. */
 }
 
-/* button stilius bus paiimtas is button css. */
+.left-hero > .btn {
+  margin-bottom: 30%;
+}
 
 .right-hero {
   align-items: center;
@@ -48,10 +49,6 @@ section .row-hero {
   margin-bottom: 20%;
 }
 
-.left-hero > .btn {
-margin-bottom: 30%;
-}
-  
 .img1 {
   width: 50%;
   margin-top: 20%;
@@ -70,6 +67,7 @@ margin-bottom: 30%;
     display: none;
   }
 }
+
 @media screen and (max-width: 975px) {
   section .row-hero {
     display: grid;
@@ -82,22 +80,23 @@ margin-bottom: 30%;
     background-size: 10%;
     }
   }
+
     @media screen and (max-width: 975px) {
       .row-hero h1 {
         font-size: 30px;
           line-height: 32px;
-        }
       }
+    }
 
-
-      @keyframes robot {
-        0%{
-            transform: translatey(0px);
-        }
-        50% {
-            transform: translatey(-30px);
-        }
-        100% {
-            transform: translatey(0px);
-        }
+    
+    @keyframes robot {
+      0%{
+          transform: translatey(0px);
       }
+      50% {
+          transform: translatey(-30px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+    } 
