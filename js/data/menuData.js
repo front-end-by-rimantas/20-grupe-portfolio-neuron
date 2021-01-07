@@ -1,5 +1,5 @@
 const menuData = {
-    selector: 'header nav-menu',
+    selector: 'header .nav-menu',
     structure: [
         {
             title: 'Home',
