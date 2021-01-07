@@ -7,11 +7,8 @@
     display: inline-block;
     width: 100%;
     text-align: center;
-    font-size: 25px;
-    font-weight: 700;
-    text-transform: capitalize;
     padding-bottom: 40px;
-    padding-top: 40px;
+    padding-top: 80px;
 }
 .service-boxes {
 display: grid;
@@ -40,7 +37,7 @@ justify-content: center
     text-align: center;
 }
 .box:hover {
-    background-image: url(/images/hero/bg.jpg);
+    background-image: url(../../images/hero/bg.jpg);
     color: white;
     background-size: cover;
     transition-delay: 1s

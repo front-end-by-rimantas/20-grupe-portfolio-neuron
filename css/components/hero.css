@@ -1,13 +1,11 @@
-section .main-hero {
-  display: grid;
-  width: 100%;
-  height: 100%;
-  grid-template-columns: 1fr 1fr;
+section .row-hero {
+  display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 
 .hero-bacground {
-    background-image: url(/images/hero/bg.jpg);
+    background-image: url(../../images/hero/bg.jpg);
     z-index: -2;
     overflow: hidden;
     width: 100%;
@@ -23,23 +21,22 @@ section .main-hero {
   display: block;
   width: 95%;
   border: none;
-  padding-top: 30%;
+  padding-top: 22%;
   background-color: transparent;
 }
-.main-hero h1 {
+.row-hero h1 {
   font-size: 45px;
-  line-height: 50px;
+  line-height: 55px;
   margin-bottom: 14px;
   font-weight: 800;
 }
-.main-hero p {
-  font-size: 17px;
-  line-height: 30px;
+.row-hero p {
+  font-size: 20px;
+  line-height: 35px;
   margin-bottom: 28px;
-  /* reikia dar srifta priskirti, o srifto spalva bus pakeista uzdejus background. */
-}
 
-/* button stilius bus paiimtas is button css. */
+  color: #fff;
+}
 
 .right-hero {
   align-items: center;
@@ -50,14 +47,12 @@ section .main-hero {
   margin-bottom: 20%;
 }
 
-.left-hero > .btn {
-margin-bottom: 30%;
-}
-  
 .img1 {
   width: 50%;
-  margin-top: 10%;
-
+  margin-top: 20%;
+  animation-name: robot;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 .img2 {
   object-fit: cover;
@@ -69,8 +64,10 @@ margin-bottom: 30%;
   .right-hero img {
     display: none;
   }
+}
+
 @media screen and (max-width: 975px) {
-  section .main-hero {
+  section .row-hero {
     display: grid;
     width: 100%;
     grid-template-columns: 1fr;
@@ -80,8 +77,24 @@ margin-bottom: 30%;
     margin: none;
     background-size: 10%;
     }
+  }
+
     @media screen and (max-width: 975px) {
-      .main-hero h1 {
+      .row-hero h1 {
         font-size: 30px;
           line-height: 32px;
-        }
+      }
+    }
+
+    
+    @keyframes robot {
+      0%{
+          transform: translatey(0px);
+      }
+      50% {
+          transform: translatey(-30px);
+      }
+      100% {
+          transform: translatey(0px);
+      }
+    } 

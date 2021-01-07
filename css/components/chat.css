@@ -1,0 +1,12 @@
+.chat.btn-round {
+  width: 75px;
+  height: 75px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+}
+
+.flaticon-chat::before {
+  font-size: 36px;
+  line-height: 75px;
+}
