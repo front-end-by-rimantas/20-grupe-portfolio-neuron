@@ -145,3 +145,53 @@
 	background-image: linear-gradient(45deg, #09c778, #01a0f9);
 	outline: none;
 }
+.play-button {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+	cursor: pointer;
+	padding: 5px 30px;
+	-webkit-background-clip: text;
+	color: rgba(0, 0, 0, 0);
+	background-image: linear-gradient(90deg, #12b4c8, #00aeef, #09c778, #01a0f9);
+	opacity: 1;
+}
+ .flaIcon:before {
+	font-size: 55px;
+	margin-right: 50px;
+	line-height: 50px;
+}
+.play-button:before {
+	display: inline-block;
+	position: absolute;
+	content: '';
+	width: 50px;
+	height: 50px;
+	top: 91.5%;
+	left: 43.5%;
+	transform: translate(-50%, -50%);
+	background: linear-gradient(-35deg, #09c778, #01a0f9);
+	border-radius: 50%;
+	opacity: 0;
+  }
+  .play-button:hover:before { 
+	animation: pulse 1.6s infinite;
+	animation-timing-function: ease-out;
+  }
+  
+  @keyframes pulse { 
+	0% {
+	  opacity: 1.1;
+	}
+	100% {
+	  width: 100px;
+	  height: 100px;
+	  opacity: 0;
+	}
+  }
+
+@media (max-width: 1200px) {
+	.play-button::before {
+	  display: none;
+	}
+  }
