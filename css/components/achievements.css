@@ -7,7 +7,7 @@
     justify-content: center;
 }
     .cloud {
-        background-image: url(/images/achievements/bg-shape.png);
+        background-image: url(../../images/achievements/bg-shape.png);
         width: 210px;
         height: 160px;
         background-repeat: no-repeat;
