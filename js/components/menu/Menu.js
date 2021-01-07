@@ -15,13 +15,15 @@ class Menu {
 
     isValidSelector() {
         if (typeof this.selector !== 'string') {
-            console.error('ERROR: selector has to be a string type.')
+            return false;
+        }
+
+        if (this.selector === '') {
             return false;
         }
         
         const DOM = document.querySelector(this.selector);
         if (!DOM) {
-            console.error('ERROR: could not find DOM object based on a given selector.')
             return false;
         }
 
@@ -29,16 +31,39 @@ class Menu {
         return true;
     }
 
+    // isHomePage () in progress
     isHomePage(title) {
         return title === 'Home';
+    }
+
+    isValidMenuItem (item) {
+        // the items must go in order neatly: 
+        // first, we need to know if the item is an object and only then go with other checks 
+        if (typeof item !== 'object' ||
+            typeof item.href !== 'string' ||
+            typeof item.title !== 'string' ||
+            item.href === '' ||
+            item.title === '') {
+            return false;
+        }
+
+        return true;
+    }
+
+    generateHTML(item) {
+        if (!this.isValidMenuItem(item)) {
+            return '';
+        }
+
+        const active = this.isHomePage(item.title) ? 'active' : '';
+        return `<a href="${item.href}" class="${active}">${item.title}</a>`;
     }
 
     render() {
         let HTML = '';
 
         for (const item of this.structure) {
-            const active = this.isHomePage(item.title) ? 'active' : '';
-            HTML += `<a href="${item.href}" class="${active}">${item.title}</a>`;
+            HTML += this.generateHTML(item);
         }
         
         this.DOM.innerHTML = HTML;
