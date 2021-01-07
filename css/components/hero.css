@@ -5,7 +5,7 @@ section .row-hero {
 }
 
 .hero-bacground {
-    background-image: url(/images/hero/bg.jpg);
+    background-image: url(../../images/hero/bg.jpg);
     z-index: -2;
     overflow: hidden;
     width: 100%;

@@ -37,7 +37,7 @@
   content: '';
   height: 26px;
   width: 26px;
-  background-image: url(/images/work/right-arrow.png);
+  background-image: url(../../images/work/right-arrow.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #09c778;
