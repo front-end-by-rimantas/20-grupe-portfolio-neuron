@@ -37,7 +37,7 @@ justify-content: center
     text-align: center;
 }
 .box:hover {
-    background-image: url(/images/hero/bg.jpg);
+    background-image: url(../../images/hero/bg.jpg);
     color: white;
     background-size: cover;
     transition-delay: 1s
