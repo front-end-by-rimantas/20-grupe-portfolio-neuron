@@ -1,13 +1,13 @@
 /* Top info section
 .main-back {
-  background-image: url(../../images/hero/bg.jpg);
-  z-index: -2;
-  overflow: hidden;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-image: url(../../images/hero/bg.jpg);
+    z-index: -2;
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .main-header {
