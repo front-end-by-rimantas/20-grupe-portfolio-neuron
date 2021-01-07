@@ -14,7 +14,7 @@ section.creativity > .row > .col-xs-12 {
     margin-left: 20px;
   }
   .block {
-    display: inline-block;
+    display: block;
     padding: 20px;
     border-radius: 5px;
     text-align: center;
@@ -22,8 +22,13 @@ section.creativity > .row > .col-xs-12 {
     margin-bottom: 40px;
 }
 .block:hover {
-    transition: 0.5s;
-    background-color: lightgray;
+  background-image: url(/images/hero/bg.jpg);
+  background-size: cover;
+  background-color: transparent;
+  transition: 0.5s ease;
+  color: #fff;
+  position: relative;
+  opacity: 0.9;
 }
 .block-left-side {
     margin-top: 50px;
@@ -41,8 +46,21 @@ section.creativity > .row > .col-xs-12 {
     margin-top: 15px;
     text-align: center;
 }
-.block-flaticon {
-    margin-bottom: 20px;
+.cIcons {
+  display: inline;
+  font-size: 90px; 
+  padding: 25px 100px 140px 80px;
+  background-clip: padding-box;
+  -webkit-background-clip: text;
+  color: rgba(0, 0, 0, 0);
+  background-image: linear-gradient(90deg, #12b4c8, #00aeef, #09c778, #01a0f9);
+  opacity: 1;
+}
+.cIcons:hover {
+  transition: 0.5s ease;
+  color: #fff;
+  position: inherit;
+  opacity: 1;
 }
 .creativity-right-side > h2 {
     font-size: 35px;
@@ -57,7 +75,6 @@ section.creativity > .row > .col-xs-12 {
     margin-top: 30px;
     text-transform: uppercase;
   }
-
   @media (max-width: 992px) {
     section.creativity > .row > .col-xs-12 {
       flex-direction: column;

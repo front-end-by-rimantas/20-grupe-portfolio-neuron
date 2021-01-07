@@ -1,0 +1,99 @@
+section.updates > .row > .col-xs-12 {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 0 #0000002d;
+  padding: 50px 0;
+  margin-top: 80px;
+  margin-bottom: -175px;
+}
+
+.flaticon-mail-1::before {
+  font-size: 230px;
+  color: #01a0f9;
+  background: -webkit-linear-gradient(#01a0f9, #09c778);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.updates-left-side {
+  display: flex;
+  justify-content: center;
+  padding: 0 40px;
+}
+
+.updates-right-side {
+  padding: 0;
+}
+
+.updates-form {
+  margin-top: 30px;
+  position: relative;
+  width: 70%;
+}
+
+.updates-form input {
+  border: 0;
+  width: 100%;
+  border-bottom: 1px solid #01a0f9;
+  font-size: 14px;
+  line-height: 35px;
+  outline: none;
+}
+
+.updates-form input::placeholder {
+  text-transform: capitalize;
+}
+
+.updates-form input:focus {
+  box-shadow: 0 5px 5px 0 #019ef942;
+}
+
+.updates-form button {
+  position: absolute;
+  right: -20px;
+  width: 36px;
+  height: 36px;
+  line-height: 35px;
+  transform: rotate(-45deg);
+}
+
+.flaticon-right-arrow::before {
+  font-size: 14px;
+  line-height: 14px;
+  justify-content: center;
+}
+
+@media (max-width: 992px) {
+  .flaticon-mail-1::before {
+    font-size: 160px;
+  }
+}
+@media (max-width: 768px) {
+  section.updates {
+    margin: 0 5%;
+  }
+
+  section.updates > .row > .col-xs-12 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flaticon-mail-1::before {
+    font-size: 160px;
+  }
+
+  .updates-right-side {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .updates-form {
+    margin-left: 15%;
+  }
+}
