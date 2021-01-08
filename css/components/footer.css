@@ -1,3 +1,10 @@
+.footer-bg {
+  width: 100%;
+  background-image: url(../../images/footer/bg-footer.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparent;
+}
 .footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, 285px);
@@ -9,10 +16,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: url(../../images/footer/bg-footer.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: transparent;
+  padding-top: 80px;
 }
 
 .foot-block > .footer-text {
@@ -25,7 +29,7 @@
   background-color: transparent;
   line-height: 15px;
   text-decoration: none;
-  text-align: left ;
+  text-align: left;
 }
 
 .footer-links a {
@@ -37,7 +41,6 @@
   text-transform: capitalize;
   text-decoration: none;
   color: black;
- 
 }
 .footer-links p {
   padding-bottom: 15px;
@@ -56,37 +59,34 @@
   padding-bottom: 30px;
 }
 footer .foot-block > .footer-text > .social a {
-    background-color:#04ABD7;
-    border: none;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 45px;
-    position: relative;
-    width: 45px;
-    height: 45px;
-    margin: 4px 2px;
-    position: relative;
-    border-radius: 100%;
-  
+  background-color: #04abd7;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 45px;
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin: 4px 2px;
+  position: relative;
+  border-radius: 100%;
 }
 .social p {
   padding-bottom: 30px;
 }
-.copy p  {
+.copy p {
   display: inline-block;
-  width:100%;
+  width: 100%;
   font-weight: 400;
-  text-align:center;
+  text-align: center;
   font-size: 14px;
   line-height: 25px;
   color: black;
   bottom: 0;
-  background-color: #EEF1F8;
   text-transform: capitalize;
- 
 }
 .about {
   display: block;
