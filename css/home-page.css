@@ -14,6 +14,7 @@
 @import './components/creativity.css';
 @import './components/footer.css';
 @import './components/form.css';
+@import './components/general-styles.css';
 @import './components/header.css';
 @import './components/hero.css';
 @import './components/intelligence.css';
@@ -24,18 +25,6 @@
 @import './components/works.css';
 
 /* custom: home page sections */
-
-h2 {
-  text-transform: capitalize;
-  font-size: 35px;
-}
-
-p {
-  font-size: 14px;
-  line-height: 24px;
-  color: #666;
-}
-
 /* header */
 /* hero */
 /* creativity */

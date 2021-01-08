@@ -5,10 +5,10 @@
 .services h2 {
   display: inline-block;
   width: 100%;
-  text-align: center;
-  padding-bottom: 40px;
-  padding-top: 40px;
+  background-color: #eff1f7;
+  padding-top: 80px;
 }
+
 .blog-block {
   display: grid;
   width: 100%;
@@ -72,7 +72,6 @@
   margin-top: 30px;
   text-transform: uppercase;
   text-align: left;
-  padding-bottom: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
 }

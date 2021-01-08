@@ -18,20 +18,18 @@
   right: 0;
   padding-top: 80px;
 }
-
 .foot-block > .footer-text {
   display: inline-block;
   width: 100%;
   border: none;
   padding-top: 40px;
-  padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 80px;
   background-color: transparent;
   line-height: 15px;
   text-decoration: none;
   text-align: left;
 }
-
 .footer-links a {
   display: inline-block;
   width: 100%;
@@ -42,10 +40,12 @@
   text-decoration: none;
   color: black;
 }
+.footer-links a:hover {
+  color: #01a0f9;
+}
 .footer-links p {
   padding-bottom: 15px;
 }
-
 .footer-text h3 {
   display: block;
   font-size: 20px;
@@ -54,28 +54,21 @@
   text-transform: uppercase;
   padding-bottom: 30px;
 }
+.footer-text > .footer-nav {
+  padding: 0;
+}
 .footer-logo {
   height: 20%;
+  padding-bottom: 26px;
+}
+.social {
   padding-bottom: 30px;
 }
-footer .foot-block > .footer-text > .social a {
-  background-color: #04abd7;
-  border: none;
+.social > .btn-round > a {
   color: white;
-  text-align: center;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 45px;
-  position: relative;
-  width: 45px;
-  height: 45px;
-  margin: 4px 2px;
-  position: relative;
-  border-radius: 100%;
-}
-.social p {
-  padding-bottom: 30px;
+  padding-top: 15px;
+  font-size: 20px;
 }
 .copy p {
   display: inline-block;
@@ -86,10 +79,20 @@ footer .foot-block > .footer-text > .social a {
   line-height: 25px;
   color: black;
   bottom: 0;
+  background-color: #eef1f8;
   text-transform: capitalize;
 }
+.copy-link {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+}
+.copy-link:hover {
+  color: #01a0f9;
+}
 .about {
-  display: block;
+  display: inline-block;
+  width: 100%;
   font-weight: 400;
   text-align: left;
   font-size: 15px;
@@ -97,6 +100,13 @@ footer .foot-block > .footer-text > .social a {
   color: black;
   padding-bottom: 30px;
 }
-.about p {
-  margin: 10px;
+
+@media (max-width: 1200px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 300px;
+  }
+  .foot-block > .footer-text {
+    padding-bottom: 0;
+  }
 }
