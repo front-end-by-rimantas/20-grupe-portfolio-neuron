@@ -2,14 +2,9 @@
     display: inline-block;
     width: 100%;
     background-color:#eff1f7;
-}
-.services h2 {
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-    padding-bottom: 40px;
     padding-top: 80px;
 }
+
 .service-boxes {
 display: grid;
 width: 100%;

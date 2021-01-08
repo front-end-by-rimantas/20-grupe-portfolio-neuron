@@ -1,6 +1,7 @@
 section.intelligence > .row > .col-xs-12 {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
 }
 
 .intelligence-left-side {
@@ -9,10 +10,6 @@ section.intelligence > .row > .col-xs-12 {
 
 .intelligence-left-side p {
   margin-top: 20px;
-}
-
-.intelligence-left-side h2 {
-  text-transform: capitalize;
 }
 
 .intelligence-left-side .button-placeholder {
