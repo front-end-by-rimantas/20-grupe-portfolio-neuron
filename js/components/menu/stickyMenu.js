@@ -1,8 +1,8 @@
 window.onscroll = function() {stickyMenu()};
 
-var menu = document.querySelector('.main-back');
-var stickyDOM = document.querySelector('.header-nav');
-var sticky = stickyDOM.offsetTop + stickyDOM.offsetHeight;
+const menu = document.querySelector('.main-back');
+const stickyDOM = document.querySelector('.header-nav');
+const sticky = stickyDOM.offsetTop + stickyDOM.offsetHeight;
 
 function stickyMenu() {
   if (window.pageYOffset > sticky) {
