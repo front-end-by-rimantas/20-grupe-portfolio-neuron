@@ -1,6 +1,8 @@
 // ALL IMPORT
 
 /* header */
+import { Menu } from './components/menu/Menu.js';
+import { menuData } from './data/menuData.js';
 /* hero */
 /* creativity */
 /* intelligence */
@@ -19,6 +21,8 @@ import { achievementsData } from './data/achievementsData.js';
 // CODE EXECUTION
 
 /* header */
+const menu = new Menu(menuData);
+menu.init();
 /* hero */
 /* creativity */
 /* intelligence */
