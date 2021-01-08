@@ -3,6 +3,7 @@
 /* header */
 import { Menu } from './components/menu/Menu.js';
 import { menuData } from './data/menuData.js';
+import { stickyMenu } from './components/menu/stickyMenu.js';
 /* hero */
 /* creativity */
 /* intelligence */
@@ -23,6 +24,7 @@ import { achievementsData } from './data/achievementsData.js';
 /* header */
 const menu = new Menu(menuData);
 menu.init();
+stickyMenu();
 /* hero */
 /* creativity */
 /* intelligence */
