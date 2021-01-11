@@ -3,26 +3,32 @@
   width: 100%;
   background-color:#eff1f7;
   align-items: center;
+  
 }
 .contact {
   display: grid;
   grid-template-columns: 40% 60%;
-  height: 700px;
+  height: 800px;
   background-image: url(../../images/contact/bg-contact.jpg);
   grid-gap: 20px;
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
+  
 }
 .contact > .contact-left {
   display: grid;
+  z-index: 1;
   background: white;
   border-radius: 5px;
-  margin-left: 15%;
   grid-template-columns: 30% 70%;
-  grid-template-rows: 200px 100px 100px 100px;
+  grid-template-rows: 200px auto;
   padding: 10px;
   color: #3b3c3d;
+  margin-top: -70px;
+  margin-left: 15%;
+  margin-bottom: 50px;
+
 }
 .contact-left > .a {
   display: grid;
@@ -129,9 +135,9 @@
   border-radius: 5px;
   line-height: 26px;
   font-size: 17px;
-  /* background-color: transparent; */
-  background-color: #ffffff4D;
   outline: none;
+  background-size: cover;
+    background-repeat: no-repeat; 
 }
 .form > .input::placeholder {
   color: #fff; 
@@ -143,7 +149,7 @@
   width: 100%;
   height: 200px;
   resize: none;
-  background: -webkit-linear-gradient(#01a0f9, #09c778);
+  background: linear-gradient(-41deg, #09c778, #01a0f9);
 } 
 .btn-forma {
   display: grid;
@@ -159,4 +165,14 @@
   text-transform: uppercase;
   text-align: center;
   outline: none;
+}
+.btn-forma:hover {
+  transition: 0.5s ease;
+  color: #09c778;
+}
+
+@media (max-width: 768px) {
+  .contact-left {
+    width: 100%;
+  }
 }
