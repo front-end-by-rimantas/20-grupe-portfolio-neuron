@@ -8,7 +8,7 @@
 .contact {
   display: grid;
   grid-template-columns: 40% 60%;
-  height: 800px;
+  height: 600px;
   background-image: url(../../images/contact/bg-contact.jpg);
   grid-gap: 20px;
   width: 100%;
@@ -27,7 +27,7 @@
   color: #3b3c3d;
   margin-top: -70px;
   margin-left: 15%;
-  margin-bottom: 50px;
+  margin-bottom: 140px;
 
 }
 .contact-left > .a {
@@ -63,7 +63,8 @@
   grid-column: 1/3;
   grid-row: 4/5;
   grid-template-columns: 1fr 2fr;
-  padding-left: 30px;  
+  padding-left: 30px; 
+  padding-bottom: 120px; 
 }
 .contact-left > .g {
   grid-column: 2/3;
@@ -126,9 +127,7 @@
   font-size: 17px;
 }
 .form > .input {
-  width: 100%;
-  padding: 15px;
-  margin: 0 0 15px;
+  width: 100%;  
   color: #fff;
   background: linear-gradient(-41deg, #09c778, #01a0f9);
   border: none;
@@ -173,6 +172,9 @@
 
 @media (max-width: 768px) {
   .contact-left {
-    width: 100%;
+    width: 600px;
+  }
+  .contact-right {
+    width: 500px;
   }
 }
