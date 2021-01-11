@@ -147,6 +147,7 @@
 }
 .play-button {
   display: inline-block;
+  position: relative;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
@@ -166,9 +167,9 @@
   content: '';
   text-align: center;
   border: none;
+  top: 50%; 
+  left: 50%;
   border-radius: 50%;
-  margin-left: 265px;
-  margin-top: 376px;
   transform: translate(-50%, -50%);
   background: linear-gradient(-35deg, #09c778, #01a0f9);
   animation: play-pulse 1.6s ease infinite;
@@ -184,9 +185,6 @@
   }
   
   100% {
-    top: -2px;
-    left: -18px;
-    right: 20px;
     width: 90px;
     height: 90px;
     opacity: 0;
