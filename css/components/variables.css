@@ -11,8 +11,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Poppins';
+  src: url(../../fonts/poppins/Poppins-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
 :root {
   --main-color: rgb(149, 149, 226);
-
-  
 }

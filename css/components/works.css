@@ -1,14 +1,15 @@
+.work {
+  margin-top: 80px;
+}
+
 .works {
   display: inline-block;
   text-align: center;
   position: relative;
-  padding-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 80px;
+  margin-top: 80px;
 }
-.work h2 {
-  text-align: center;
-  padding-top: 80px;
-}
+
 .works h5 {
   font-size: 20px;
   font-weight: 600;

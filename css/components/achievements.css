@@ -1,51 +1,61 @@
 .achievements {
-    background: linear-gradient(0deg, #01a0f9, #09c778);
-    z-index: -2;
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  background: linear-gradient(0deg, #01a0f9, #09c778);
+  z-index: -2;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
 }
-    .cloud {
-        background-image: url(../../images/achievements/bg-shape.png);
-        width: 210px;
-        height: 160px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        margin: 25px;
-        margin-top: 60px;
-        margin-bottom: 60px;
-        position: relative;
-    }
-    .inCloud {
-        width: 180px;
-        position: absolute;
-        transform: translate(-50%);
-        top: -50%;
-        left: 50%;
-        color: #ffffff;
-        text-align: center;
-        font-weight: 700;
-    }
-        .first-text {
-            font-size: 35px;
-            margin-top: 115px;
-        }
-        .last-text {
-            font-size: 20px;
-            margin-top: 10px;
-        }
+.cloud {
+  background-image: url(../../images/achievements/bg-shape.png);
+  width: 210px;
+  height: 160px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 25px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  position: relative;
+}
+.inCloud {
+  width: 180px;
+  position: absolute;
+  transform: translate(-50%);
+  top: -50%;
+  left: 50%;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 600;
+}
+.first-text {
+  font-size: 35px;
+  margin-top: 115px;
+}
+
+.first-text::after {
+  content: '+';
+  margin-left: 10px;
+}
+
+.plus-symbol {
+  font-size: 35px;
+}
+
+.last-text {
+  font-size: 18px;
+}
 
 @media (min-width: 992px) {
-    .achievements > .row > .col-md-6 {
-        display: flex;
-        justify-content: center;
-    }
+  .achievements > .row > .col-md-6 {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) {
-    .achievements > .row > .col-sm-12 {
-        display: flex;
-        justify-content: center;
-    }
+  .achievements > .row > .col-sm-12 {
+    display: flex;
+    justify-content: center;
+  }
 }
