@@ -26,7 +26,6 @@ function projectSlide() {
     function left() {
         let slides2 = document.querySelectorAll('.slide-single');
         let offset2 = 0;
-        console.log()
         slides2[0].style.left = -33 + '%';
         setTimeout(function() {
             slides2[0].remove();
@@ -44,10 +43,10 @@ function projectSlide() {
 
     draw(0);draw(1);draw(2);draw(3);
      
-    setInterval(function(){if(flag){left()} }, 6000);
+    setInterval(function(){if(flag){left()}}, 6000);
     
     wrapper.addEventListener('mouseover', function(){
-           flag = false;
+        flag = false;
     })
     wrapper.addEventListener('mouseout', function(){
         flag = true;
