@@ -2,12 +2,10 @@
   display: grid;
   width: 100%;
   background-color:#eff1f7;
+  background-image: url(../../images/contact/bg-contact.jpg);
   background-size: cover;
   align-items: center;
   padding-top: 70px;
-}
-.container{
-  background-image: url(../../images/contact/bg-contact.jpg);
 }
 .contact {
   display: grid;
@@ -149,6 +147,7 @@
   width: 100%;
   height: 200px;
   resize: none;
+  padding-top: 10px;
 } 
 .btn-forma {
   display: grid;
@@ -208,11 +207,14 @@
     width: 700px; 
   }
   .contact-left {
-    width: 668px;
+    width: 600px;
     margin-right:0%;
+    margin-left: 90px;
+    margin-top: 0px;
+    z-index: -1;
   }
   .form {
-    margin-top: -60px;
+    margin-top: 60px;
   }
   .form > .input {
     display: grid;
@@ -224,5 +226,5 @@
     display: 300px;
     margin-right:0%;
   }
-}
+
 
