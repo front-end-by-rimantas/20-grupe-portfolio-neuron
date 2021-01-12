@@ -1,3 +1,5 @@
+import { isValidAchievementItem } from './isValidAchievementItem.js';
+
 class Achievements {
     constructor(params) {
         this.selector = params.selector;
@@ -21,6 +23,7 @@ class Achievements {
         this.limit = this.isValidLimit() ? this.limit : this.defaultLimit;
 
         this.render();
+        return true;
     }
 
     isValidSelector() {
@@ -37,14 +40,20 @@ class Achievements {
     }
 
     isValidData() {
+        if (!Array.isArray(this.data) ||
+            this.data.length === 0) {
+            return false;
+        }
         return true;
     }
 
     isValidLimit() {
-        return true;
-    }
-
-    isValidAchievementItem() {
+        if (typeof this.limit !== 'number' ||
+            !isFinite(this.limit) ||
+            this.limit < 1 ||
+            this.limit % 1 !== 0) {
+            return false;
+        }
         return true;
     }
 
@@ -56,7 +65,7 @@ class Achievements {
             if (validItems >= this.limit) {
                 break;
             }
-            if (!this.isValidAchievementItem(item)) {
+            if (!isValidAchievementItem(item)) {
                 continue;
             }
             this.validUsedData.push(item);
