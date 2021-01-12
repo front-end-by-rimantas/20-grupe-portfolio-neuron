@@ -74,6 +74,36 @@ describe('validation of parameters', () => {
        } 
         const creativity = new Creativity(params);
         expect(creativity.isValidInput(params)).toBeTruthy();
-        expect(Object.keys(creativity).length).toBe(2);
+        expect(Object.keys(creativity).length).toBe(3);
+    })
+
+    test('return false if given selector does not exist <h1>', () => {
+        document.body.innerHTML = '';
+            const params = {
+            selector: 'h1',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.isValidSelector()).toBeFalsy();
+    })
+
+    test('return false if given selector does not exist <div id="creativity">', () => {
+        document.body.innerHTML = '<div id="creativity2">';
+            const params = {
+            selector: '#creativity',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.isValidSelector()).toBeFalsy();
+    })
+
+    test('return true if given selector exist <div id="creativity">', () => {
+        document.body.innerHTML = '<div id="creativity">';
+            const params = {
+            selector: '#creativity',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.isValidSelector()).toBeTruthy();
     })
 })
