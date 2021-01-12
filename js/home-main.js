@@ -12,6 +12,7 @@ import { Achievements } from './components/achievements/Achievements.js';
 import { achievementsData } from './data/achievementsData.js';
 /* services */
 /* projects */
+import { projectSlide } from './components/projects/renderProjects.js';
 /* updates */
 /* clients */
 /* works */
@@ -34,6 +35,7 @@ achievements.init();
 achievements.addEvents();
 /* services */
 /* projects */
+projectSlide();
 /* updates */
 /* clients */
 /* works */
