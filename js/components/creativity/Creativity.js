@@ -6,6 +6,10 @@ class Creativity {
 
      this.selector = params.selector;
      this.data = params.data;
+
+    this.DOM = null;
+
+     this.init();
     }
 
     isValidInput(params) {
@@ -23,6 +27,39 @@ class Creativity {
             }
 
           return true;
+        }
+
+        init() {
+            if (!this.isValidSelector()) {
+                return false;
+            }
+        }
+
+        isValidSelector() {
+            const DOM = document.querySelector(this.selector);
+            if (!DOM) {
+                return false;
+        }
+            this.DOM = DOM;
+            return true;
+        }
+
+        render () {
+            let HTML = '';
+
+            for (const item of this.data) {
+                HTML += this.generateCreativityItem(item);
+            }
+
+            if (HTML === '') {
+                return false;
+            }
+            this.DOM.innerHTML = HTML;
+            return true;
+        }
+
+        generateCreativityItem(item) {
+            return '';
         }
     }
 

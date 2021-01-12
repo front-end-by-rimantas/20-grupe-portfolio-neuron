@@ -106,4 +106,24 @@ describe('validation of parameters', () => {
         const creativity = new Creativity(params);
         expect(creativity.isValidSelector()).toBeTruthy();
     })
+
+    test('should find DOM element if selector is correct', () => {
+        document.body.innerHTML = '<div id="creativity">';
+            const params = {
+            selector: '#creativity',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.DOM).not.toBeNull();
+    })
+
+    test('should return empty HTML text if data list is wrong', () => {
+        document.body.innerHTML = '<div id="creativity">';
+            const params = {
+            selector: '#creativity',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.DOM).not.toBeNull();
+    })
 })
