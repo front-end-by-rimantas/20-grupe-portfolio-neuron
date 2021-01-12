@@ -22,14 +22,15 @@ section.creativity > .row > .col-xs-12 {
     margin-bottom: 40px;
 }
 .block:hover {
-  background-image: url(../../images/hero/bg.jpg);
-  background-size: cover;
+  background-image: linear-gradient(-41deg, #09c778, #01a0f9);
   background-color: transparent;
   transition: 0.5s ease;
-  color: #fff;
   position: relative;
   opacity: 0.9;
+  color: #fff;
 }
+.block:hover p { color: #fff; transition: 0.5s ease;}
+
 .block-left-side {
     margin-top: 50px;
     width: 48%;
@@ -48,8 +49,8 @@ section.creativity > .row > .col-xs-12 {
 }
 .cIcons {
   display: inline;
-  font-size: 90px; 
-  padding: 25px 100px 140px 80px;
+  font-size: 75px; 
+  padding: 25px 100px 118px 80px;
   background-clip: padding-box;
   -webkit-background-clip: text;
   color: rgba(0, 0, 0, 0);
@@ -62,6 +63,7 @@ section.creativity > .row > .col-xs-12 {
   position: inherit;
   opacity: 1;
 }
+
 .creativity-right-side > h2 {
     font-size: 35px;
     margin-bottom: 20px;
