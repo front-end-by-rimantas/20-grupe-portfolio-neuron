@@ -1,7 +1,6 @@
 .contact-container {
   display: grid;
   width: 100%;
-  /* background-image: url(../../images/contact/bg-contact.jpg); */
   background-color:#eff1f7;
   background-size: cover;
   align-items: center;
@@ -138,7 +137,6 @@
   font-size: 17px;
   outline: none;
   background-size: cover;
-  background-repeat: no-repeat; 
   padding-left: 15px;
 }
 .form > .input::placeholder {
@@ -190,69 +188,31 @@
   transition: 0.5s ease;
   color: #09c778;
 }
-
 @media screen and (max-width: 992px) {
-  .contact > .contact-left {
-    display: grid;
-    z-index: 1;
-    border-radius: 5px;
-    grid-template-columns: 200px 300px;
-    grid-template-rows: 200px auto;
-    color: #3b3c3d;
-    align-content: center;
+  .contact {
+    display:contents;
   }
-   .a {
-    display: grid;
-    text-align: center;
+  .container {
+    width: 700px; 
   }
-   .b {
-    display: grid;
-    grid-column: 1;
-    grid-row: 2/3;
-    padding-left: 30px;
-    align-content: left;
-
-  }
-  .contact-left > .c {
-    grid-column: 2/3;
-    grid-row: 2;
-  }
-  .contact-left > .d {
-    grid-column: 1/3;
-    grid-row: 3/4;
-    grid-template-columns: 1fr 2fr; 
-    padding-left: 30px; 
-  }
-  .contact-left > .e {
-    grid-column: 2/3;
-    grid-row: 3;
-  }
-  .contact-left > .f {
-    grid-column: 1/3;
-    grid-row: 4/5;
-    grid-template-columns: 1fr 2fr;
-    padding-left: 30px; 
-    padding-bottom: 120px; 
-  }
-  .contact-left > .g {
-    grid-column: 2/3;
-    grid-row: 4;
-  }
-  .contact > .contact-right {
-    display: none;
+ 
+  /* .contact-left {
+    width: 200%;
+  } */
+  .contact-right {
+    display: 300px;
+    margin-right:0%;
   }
 }
-
 /* @media screen and (max-width: 768px) {
-  .contact-left {
-    display: grid;
-    width: 100%;
-    grid-template-columns: 1fr 2fr;
-    justify-content: center;
-    text-align: center;
-    padding: none;
-    margin: none;
-    background-size: 10%;
+  .container {
+    width: 700px;
   }
-}
-  */
+  .contact-left {
+    width: 500px;
+  }
+  .contact-right {
+    display: 300px;
+  }
+} */
+
