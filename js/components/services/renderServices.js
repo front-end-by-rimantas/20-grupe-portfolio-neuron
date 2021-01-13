@@ -6,7 +6,7 @@ function renderServices(params) {
     if (!isValidServices(params)) {
         return false;
     }
-    const { selector, data, limit } = params;
+    const { selector, data } = params;
     
     const DOM = findIfValidSelector(selector);
     if (!DOM) {
@@ -25,8 +25,11 @@ function renderServices(params) {
                 </div>`;
     }
 
-    DOM.innerHTML = HTML;
+    if (HTML === '') {
+        return false;
+    }
 
+    DOM.innerHTML = HTML;
     return true;
 }
 
