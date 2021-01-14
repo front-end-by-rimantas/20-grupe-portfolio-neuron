@@ -126,4 +126,21 @@ describe('validation of parameters', () => {
         const creativity = new Creativity(params);
         expect(creativity.DOM).not.toBeNull();
     })
+
+    test('should return empty HTML text if data list is wrong', () => {
+        document.body.innerHTML = '<div id="creativity">';
+            const params = {
+            selector: '#creativity',
+            data: [{}]
+        }
+        const creativity = new Creativity(params);
+        expect(creativity.render()).toBeFalsy();
+    })
+
+    test('should return empty HTML text if data of creativity section object is wrong', () => {
+        const creativity = new Creativity();
+        expect(creativity.generateCreativityItem()).toBe('');
+        expect(creativity.generateCreativityItem({})).toBe('');
+        expect(creativity.generateCreativityItem({})).toBe('');
+    })
 })
