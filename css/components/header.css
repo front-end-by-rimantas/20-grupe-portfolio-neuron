@@ -49,9 +49,7 @@
   display: inline-block;
   font-size: 15px;
 }
-.left-topInfo .contacts:hover {
-  opacity: 0.8;
-}
+
 .left-topInfo > .contacts .fa-phone {
   padding-left: 25px;
 }
