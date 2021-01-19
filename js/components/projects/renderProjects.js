@@ -1,7 +1,7 @@
 function projectSlide() {
     let slides = document.querySelectorAll('.slide-single');
     let slider = [];
-    let wrapper = document.querySelector('#slide')
+    let wrapper = document.querySelector('.img')
     let flag = true;
     for(let i = 0; i < slides.length; i++) {
        slider[i] = slides[i].src;
@@ -16,7 +16,7 @@ function projectSlide() {
         img.src = slider[step];
         img.classList.add('slide-single');
         img.style.left = offset*33 +'%';
-        document.querySelector('#slide').appendChild(img);
+        document.querySelector('.img').appendChild(img);
         step++;
         if(step === slider.length) {
             step = 0;

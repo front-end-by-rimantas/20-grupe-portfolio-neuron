@@ -33,9 +33,9 @@ section.projects h2 {
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
-}
+} */
 
-.image-box {
+/* .image-box {
   width: 31%;
   position: relative;
 } */
@@ -44,7 +44,7 @@ section.projects h2 {
   border-radius: 5px;
 }
 
-.image-box img::before {
+.image-box .img::before {
   content: '';
   color: #fff;
   position: absolute;
@@ -57,7 +57,7 @@ section.projects h2 {
   opacity: 0;
 }
 
-.image-box img::after {
+.image-box .img::after {
   content: 'Vocal Avatar API';
   position: absolute;
   color: #fff;
@@ -68,12 +68,12 @@ section.projects h2 {
   opacity: 0;
 }
 
-.image-box img:hover::before {
+.image-box .img:hover::before {
   opacity: 0.8;
   transition: 0.5s ease;
 }
 
-.image-box img:hover::after {
+.image-box .img:hover::after {
   opacity: 1;
   animation-name: labelUp;
   animation-duration: 0.5s;
