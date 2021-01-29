@@ -42,10 +42,14 @@
   text-decoration: none;
   color: #ffffff;
 }
+.left-topInfo a:hover {
+  opacity: 0.8;
+}
 .left-topInfo > .contacts {
   display: inline-block;
   font-size: 15px;
 }
+
 .left-topInfo > .contacts .fa-phone {
   padding-left: 25px;
 }
@@ -55,6 +59,7 @@
   color: #ffffff;
   font-size: 15px;
 }
+
 .right-topInfo > .topInfo-socials {
   display: inline-block;
   float: right;
@@ -64,6 +69,9 @@
   color: #ffffff;
   margin-left: 15px;
   vertical-align: baseline;
+}
+.right-topInfo > .topInfo-socials a:hover {
+  opacity: 0.8;
 }
 
 /* Navigation */
