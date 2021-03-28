@@ -5,26 +5,46 @@ section.projects {
 section.projects h2 {
   text-align: center;
 }
+.wrap {
+  width: 100%;
+  height: 380px;
+  position: relative;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.image-box {
+  display: inline-block;
+  width: 200%;
+  overflow: hidden;
+}
+.slide-single {
+  width: 31%;
+  height: 380px;
+  margin: 0 15px;
+  position: absolute;
+  transition: all 1s ease, height 1ms;
+  top: 0;
+  left: 0;
+}
 
-.project-images-placeholder {
+/* .project-images-placeholder {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 30px;
-}
+} */
 
-.image-box {
+/* .image-box {
   width: 31%;
   position: relative;
-}
+} */
 
-.project-images-placeholder > div img {
-  width: 100%;
+.wrap > div img {
   border-radius: 5px;
 }
 
-.image-box::before {
+.image-box .img::before {
   content: '';
   color: #fff;
   position: absolute;
@@ -37,7 +57,7 @@ section.projects h2 {
   opacity: 0;
 }
 
-.image-box::after {
+.image-box .img::after {
   content: 'Vocal Avatar API';
   position: absolute;
   color: #fff;
@@ -48,12 +68,12 @@ section.projects h2 {
   opacity: 0;
 }
 
-.image-box:hover::before {
+.image-box .img:hover::before {
   opacity: 0.8;
   transition: 0.5s ease;
 }
 
-.image-box:hover::after {
+.image-box .img:hover::after {
   opacity: 1;
   animation-name: labelUp;
   animation-duration: 0.5s;
@@ -69,7 +89,7 @@ section.projects h2 {
   }
 }
 
-@media (max-width: 992px) {
+/* @media (max-width: 992px) {
   .project-images-placeholder div {
     width: 48%;
   }
@@ -90,4 +110,4 @@ section.projects h2 {
   .project-images-placeholder div:not(:first-child) {
     display: none;
   }
-}
+} */
